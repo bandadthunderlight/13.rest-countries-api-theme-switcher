@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <title>Rest countries Api</title>
+</head>
+
+<body onload="loadDetails()">
+    <section class="topBar-section ">
+        <div class="topBar-left">Where in the world?</div>
+        <div class="topBar-right" onclick="changeTheme()"><img class="topBar-right-icon"
+                src="./images/moon-fill.svg" />Dark Mode</div>
+    </section>
+
+    <div class="mainBar-wrapper row">
+
+        <section class="flagBar-section col-md-6 col-12">
+            <div class="flagBar-backBtn-wrapper">
+                <button class="flagBar-backBtn" onclick="gotoHome()"><i
+                        class="fa-solid fa-arrow-left-long me-2"></i>Back</button>
+            </div>
+            <div class="flagBar-flagPoster-wrapper">
+
+            </div>
+        </section>
+
+        <section class="detailsBar-section container col-md-5 col-12">
+            <div class="detailWrapper row">
+
+            </div>
+            <div class="borderWrapper row gx-5">border Countries: </div>
+        </section>
+
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

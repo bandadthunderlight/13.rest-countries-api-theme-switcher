@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <title>Rest countries Api</title>
+</head>
+<!--  -->
+
+<body onload="loadHome()">
+
+    <section class="topBar-section ">
+        <div class="topBar-left">Where in the world?</div>
+        <div class="topBar-right" onclick="changeTheme()"><img class="topBar-right-icon"
+                src="./images/moon-fill.svg" />Dark Mode</div>
+    </section>
+
+    <section class="searchAndFilterBar-section">
+        <div class="searchBar-container">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" id="searchInput" onkeyup="searchCountry(event)" class="form-control"
+                    placeholder="Search for a country.." aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+
+        </div>
+        <div class="filterBar-container">
+            <select class="filterBar-select form-select">
+                <option selected class="filterBar-select-item label">Filter by Region</option>
+                <option class="filterBar-select-item" value="1">Africa</option>
+                <option class="filterBar-select-item" value="2">America</option>
+                <option class="filterBar-select-item" value="3">Asia</option>
+                <option class="filterBar-select-item" value="4">Europe</option>
+                <option class="filterBar-select-item" value="5">Oceania</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="worldFlags-section container-fluid px-5">
+        <div class="worldFlags-container row row-cols-1 row-cols-md-3 row-cols-lg-4 g-5 px-4">
+
+
+        </div>
+    </section>
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
